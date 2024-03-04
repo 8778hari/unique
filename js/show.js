@@ -53,3 +53,13 @@ $(document).ready(function(){
         $("#contact_us").hide();
     }
 });
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('nav').addClass('shrink');
+      $('#top_image').addClass('dis_none');
+    } else {
+      $('nav').removeClass('shrink');
+      $('#top_image').removeClass('dis_none');
+    }
+  });
